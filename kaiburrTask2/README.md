@@ -13,7 +13,10 @@ This repository contains the Dockerfile and instructions for building a Docker i
 
 To build the Docker image for the Kaiburr Spring Boot API, follow these steps:
 
-1. **Clone the Repository:**
-2. **Build the Docker Image:**
-3. **Run the Docker Container:**
+1. **Clone the Repository**
+2. **Build the Docker Image**
+3. **Run the Docker Container**
+
+## My Screenshots
+
 
