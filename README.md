@@ -28,18 +28,30 @@ minikube start
 ```
 <img width="1440" alt="minikube setup" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/87cd9e3e-0ab2-49c0-9be0-deaf1beeebdb">
 
-## 3. Deploy springboot API and MongoDB
+## 3. Deploying the manifests
+
 ```bash
-kubectl create -f mongo-pvc.yml
 kubectl create -f mongo-deployment.yml
 kubectl create -f mongo-service.yml
+kubectl create -f mongo-pvc.yml
 kubectl create -f deployment.yml
 kubectl create -f service.yml
 ```
 <img width="1440" alt="deployments and services creations" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/30c27d17-f8f9-43d2-ad3b-d0dbfab80df9">
 
 ## 4. Verify Deployment
+
 ```bash
 kubectl get all
 ```
 <img width="1440" alt="Status" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/af15af71-b11b-45bb-928a-bb758b70ff6c">
+
+## 5. Accessing the Kaiburr API Service
+
+```bash
+minikube service kaiburr-api-service
+```
+### Checking the PUT Method
+<img width="1440" alt="PUT method" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/c49f3d7d-6b4e-4899-ac85-5642bc8a456b">
+### Checking the GET Method
+<img width="1440" alt="GET method" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/8c67cadb-a1d7-4bb6-b493-7a8220e57a34">
