@@ -53,5 +53,15 @@ minikube service kaiburr-api-service
 ```
 ### Checking the PUT Method
 <img width="1440" alt="PUT method" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/c49f3d7d-6b4e-4899-ac85-5642bc8a456b">
+
 ### Checking the GET Method
 <img width="1440" alt="GET method" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/8c67cadb-a1d7-4bb6-b493-7a8220e57a34">
+
+### Checking in browser
+<img width="1440" alt="Browser view GET method" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/b101fa88-1088-4142-9fd4-4ca6ea913306">
+
+### Checking API endpoints using curl
+<img width="1440" alt="CURL methods" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/0d52421f-5969-4f6c-b2f7-641cbe3cde08">
+
+
+
