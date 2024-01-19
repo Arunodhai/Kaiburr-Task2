@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kaiburr-api-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kaiburr-api
+  template:
+    metadata:
+      labels:
+        app: kaiburr-api
+    spec:
+      containers:
+        - name: kaiburr-api
+          image: arunodhai/kaiburrapi:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SPRING_DATA_MONGODB_URI
+              value: "mongodb://mongo-service:27017/Task"
