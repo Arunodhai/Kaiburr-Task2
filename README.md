@@ -1,6 +1,6 @@
 # Kaiburr Task 2 : API Deployment with Kubernetes on Minikube
 
-This repository contains the Kubernetes manifests and Dockerfiles for deploying the Spring Boot API application connected to MongoDB (created in Task 1) on a Minikube cluster.
+This repository contains the Kubernetes manifests and Dockerfile for deploying the Spring Boot API application connected to MongoDB (created in Task 1) on a Minikube cluster.
 
 ## Prerequisites
 
@@ -63,5 +63,27 @@ minikube service kaiburr-api-service
 ### Checking API endpoints using curl
 <img width="1440" alt="CURL methods" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/0d52421f-5969-4f6c-b2f7-641cbe3cde08">
 
+## 6. Checking MongoDB Data Inside the Running Pod
 
+```bash
+kubectl exec -it mongo-deployment-df7b8b9c-sf8nh -- /bin/bash 
+```
+### To open the mongo shell inside the MongoDB running Pod
+```bash
+mongosh
+```
+<img width="1440" alt="Viewing data inside mongodb pod" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/685af247-2fd6-4a65-8f62-c7ed4295c758">
 
+## 7. Checking Persistent Volume Claim (PVC) by deleting mongoDB pod
+### To view PVC
+```bash
+kubectl get pvc
+```
+### Deleting mongoDB pod
+```bash
+kubectl delete pod mongo-deployment-df7b8b9c-kp7t6  
+```
+<img width="1440" alt="Checking PVC" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/b2f59959-34aa-4c02-b029-d05b894c57da">
+
+## 8. Verifying Data Persistence in MongoDB
+<img width="1440" alt="Viewing persisted data inside mongodb" src="https://github.com/Arunodhai/Kaiburr-Task2/assets/60264218/d936a56d-8aec-4ca4-a6d5-c1f6fa778827">
