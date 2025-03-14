@@ -1,4 +1,4 @@
-# Kaiburr Task 2 : API Deployment with Kubernetes on Minikube
+# API Deployment with Kubernetes on Minikube
 
 This repository contains the Kubernetes manifests and Dockerfile for deploying the Spring Boot API application connected to MongoDB (created in Task 1) on a Minikube cluster.
 
